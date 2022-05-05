@@ -7,13 +7,14 @@ from pathlib import Path
 
 class Main:
 
-    # specifying path to image
+    # specify current working directory:
     cwd = str(Path(__file__).parent.absolute())
 
-    # specifying maximum width/length
+    # specify maximum width & length:
     maxSize = (150, 150)
 
     try:
+        # open image:
         imgPath = cwd + "/image.jpg"
         img = Image.open(imgPath)
 
@@ -22,13 +23,14 @@ class Main:
         img.thumbnail(maxSize, Image.ANTIALIAS)
         img = ImageOps.exif_transpose(imgTemp)
 
+        # delete unnecessary var to free some memory:
         del imgTemp
 
         imgC = img.load()
 
-        # start ImageGenerator.GetTxt with selected image
+        # start ImageGenerator.GetTxt with selected image:
         ImageGenerator.GetTxt(img.width, img.height, imgC)
 
-    # in case "image.jpg" doesn't exist:
+    # print error message in case "image.jpg" doesn't exist:
     except IOError:
         print("ERROR: image not found")
