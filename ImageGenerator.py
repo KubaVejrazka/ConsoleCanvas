@@ -7,7 +7,7 @@ class ImageGenerator:
     def GetTxt(xx, yy, img):
 
         #CHARSET:
-        chars = [" ", ".", "+", "I", "W"]
+        chars = [' ', '.', '+', 'I', 'W']
 
         for y in range(yy):
             for x in range(xx):
