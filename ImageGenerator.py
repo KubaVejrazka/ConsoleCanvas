@@ -4,13 +4,13 @@ from PIL import Image
 
 class ImageGenerator:
 
-    # main def, called in Start.py
+    # main def, called in Start.py:
     def GetTxt(xx, yy, img):
 
         # CHARSET (low to high opacity):
         chars = [' ', '.', '+', 'I', 'W']
         
-        # go through every pixel
+        # go through every pixel:
         for y in range(yy):
             for x in range(xx):
 
