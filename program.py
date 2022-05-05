@@ -1,3 +1,12 @@
 # This is the main project file.
 
-print("Hello World!")
+from tkinter import Image
+
+global img;
+
+try:
+    img = Image.open("image.png")
+
+
+except IOError:
+    pass
