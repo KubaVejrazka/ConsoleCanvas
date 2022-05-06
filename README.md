@@ -2,8 +2,16 @@
 Allows user to draw an image using ASCII characters.
 
 ## How to use:
-1) Replace "image.jpg" with the image you want to use, keep in mind that it has to have the same name and format.
-2) Open your terminal inside /ConsoleCanvas/ and run:
+1) Download ConsoleCanvas:
+```
+git clone https://github.com/KubaVejrazka/ConsoleCanvas.git
+```
+2) Install Pillow:
+```
+pip install Pillow
+```
+3) Replace "image.jpg" with the image you want to use, keep in mind that it has to have the same name and format.
+4) Open your terminal inside /ConsoleCanvas and run:
 ```
 python Start.py
 ```
