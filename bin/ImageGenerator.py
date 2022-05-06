@@ -32,7 +32,7 @@ class ImageGenerator:
                 # calculate average opacity ((RED + GREEN + BLUE) / 3):
                 opacity = int((img[x, y][0] + img[x, y][1] + img[x, y][2]) / 3)
 
-                # pick character from CHARSET based on pixel's opacity:
+                # pick character from charset based on pixel's opacity:
                 if opacity <= 0:
                     print("  ", end="")
                 if opacity > 0 and opacity <= 51:
