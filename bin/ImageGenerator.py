@@ -15,7 +15,7 @@ class ImageGenerator:
     def GetTxt(xx, yy, img, pixelArt, custom):
 
         # default charset:
-        chars = [' ', '.', '+', 'I', 'W']
+        chars = [' ', '.', '+', 'o', 'O']
 
         # pixel art charset:
         if pixelArt:
