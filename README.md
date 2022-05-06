@@ -15,13 +15,13 @@ pip install Pillow
 First, you want to replace "image.jpg" with the image you want to use, keep in mind that it has to have the same name and format.
 
 #### Run with the default charset:
-Open your terminal inside /ConsoleCanvas and run:
+Open your terminal inside /ConsoleCanvas/bin and run:
 ```
 python Start.py
 ```
 
 #### Run with the PixelArt charset:
-Open your terminal inside /ConsoleCanvas and run:
+Open your terminal inside /ConsoleCanvas/bin and run:
 ```
 python Start.py pixelart
 ```
@@ -29,7 +29,7 @@ python Start.py pixelart
 #### Run with a custom charset:
 First, you should edit your custom charset. You can do that by following the instructions at the end of this README.
 
-Open your terminal inside /ConsoleCanvas and run:
+Open your terminal inside /ConsoleCanvas/bin and run:
 ```
 python Start.py custom
 ```
