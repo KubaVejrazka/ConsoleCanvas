@@ -38,8 +38,3 @@ python Start.py custom
 1) Open "CustomCharset.py" in your editor.
 2) Put each character inside one pair of single quotes.
 3) Save the file.
-
-Now you can run the program with your custom charset using:
-```
-python Start.py custom
-```
