@@ -14,7 +14,7 @@ pip install Pillow
 ## How to use:
 First, you want to replace "image.jpg" with the image you want to use, keep in mind that it has to have the same name and format.
 
-#### Run with default charset:
+#### Run with the default charset:
 Open your terminal inside /ConsoleCanvas and run:
 ```
 python Start.py
@@ -34,6 +34,12 @@ Open your terminal inside /ConsoleCanvas and run:
 python Start.py custom
 ```
 
-## Edit charset:
+## Edit your custom charset:
 1) Open "CustomCharset.py" in your editor.
 2) Put each character inside one pair of single quotes.
+3) Save the file.
+
+Now you can run the program with your custom charset using:
+```
+python Start.py custom
+```
