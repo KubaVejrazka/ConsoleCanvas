@@ -24,6 +24,8 @@ class ImageGenerator:
         # custom charset:
         elif custom:
             chars = CustomCharset.chars
+        
+        n = int(255 / len(chars))
 
         # go through every pixel:
         for y in range(yy):
@@ -33,18 +35,14 @@ class ImageGenerator:
                 opacity = int((img[x, y][0] + img[x, y][1] + img[x, y][2]) / 3)
 
                 # pick character from charset based on pixel's opacity:
-                if opacity <= 0:
-                    print("  ", end="")
-                if opacity > 0 and opacity <= 51:
-                    print(f"{chars[0]}{chars[0]}", end="")
-                if opacity > 51 and opacity <= 102:
-                    print(f"{chars[1]}{chars[1]}", end="")
-                if opacity > 102 and opacity <= 153:
-                    print(f"{chars[2]}{chars[2]}", end="")
-                if opacity > 153 and opacity <= 204:
-                    print(f"{chars[3]}{chars[3]}", end="")
-                if opacity > 204:
-                    print(f"{chars[4]}{chars[4]}", end="")
+                def charIndex():
+                    for i in range(len(chars) + 1):
+                        if opacity == 0: return 0
+                        elif (i * n) >= (255 - (255 % n)): return len(chars) - 1
+                        elif opacity <= (i * n):
+                            return i - 1
+
+                print(f"{chars[charIndex()]}{chars[charIndex()]}", end="")
 
             # go to the next line:
             print()
