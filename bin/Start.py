@@ -12,7 +12,7 @@ class Main:
     cwd = str(Path(__file__).parent.parent.absolute())
 
     # specify maximum width & length:
-    maxSize = (150, 150)
+    maxSize = (200, 200)
 
     try:
         customPath = ""
@@ -26,7 +26,11 @@ class Main:
             if "path=" in arg:
                 arg = arg[5:]
                 customPath = arg
-                 
+
+            elif "size=" in arg:
+                arg = arg[5:]
+                try: maxSize = (int(arg), int(arg))
+                except: pass
 
             elif arg == "pixelart": pixelArt = True
             elif arg == "custom": custom = True
