@@ -1,7 +1,5 @@
 # This is the main project file.
 
-from ast import arg
-from operator import truediv
 import sys
 from ImageGenerator import ImageGenerator
 from PIL import Image, ImageOps
