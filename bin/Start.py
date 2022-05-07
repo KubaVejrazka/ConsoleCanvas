@@ -1,8 +1,6 @@
 # This is the main project file.
 
 import sys
-import pwd
-import os
 from ImageGenerator import ImageGenerator
 from PIL import Image, ImageOps
 from pathlib import Path
@@ -34,7 +32,7 @@ class Main:
             elif arg == "custom": custom = True
 
         # open image:
-        if customPath != "": imgPath = "/home/" + pwd.getpwuid(os.geteuid())[0] + customPath
+        if customPath != "": imgPath = customPath
         else: imgPath = cwd + "/image.jpg"
         print(imgPath)
 
