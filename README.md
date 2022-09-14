@@ -12,8 +12,8 @@ pip install Pillow
 ```
 
 ## How to use:
-First, you want to replace "image.jpg" with the image you want to use, keep in mind that it has to have the same name and format.
-Also, I recommend changing your terminal's font to "Liberation Mono", for equal spaces between columns and rows.
+First, you want to set up your terminal. It's quite simple, you just scroll out as far as you can, so you can fit as much text in the window as possible.
+Also, I recommend changing your terminal's font to "Liberation Mono", for equal spaces between columns and rows, so your image isn't disorted.
 
 #### Run with the default charset:
 Open your terminal inside /ConsoleCanvas/bin and run:
