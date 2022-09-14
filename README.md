@@ -36,13 +36,13 @@ python Start.py custom
 ```
 
 #### Edit the image size:
-If you want to edit the image size (for example if the image is too big for your terminal window), you can use this argument:
+If you want to edit the image size (for example if the image is too big for your terminal window), you can use this argument while running "Start.py":
 ```
 size=<targeted image size, i recommend 100-300>
 ```
 
 #### Use a custom image:
-For opening an image other, than the default one, you can use the following argument:
+For opening an image other, than the default one, you can use the following argument while running "Start.py":
 ```
 path=<image path>
 ```
