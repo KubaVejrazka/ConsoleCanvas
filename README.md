@@ -35,6 +35,18 @@ Open your terminal inside /ConsoleCanvas/bin and run:
 python Start.py custom
 ```
 
+#### Edit the image size:
+If you want to edit the image size (for example if the image is too big for your terminal window), you can use this argument:
+```
+size=<targeted image size, i recommend 100-300>
+```
+
+#### Use a custom image:
+For opening an image other, than the default one, you can use the following argument:
+```
+path=<image path>
+```
+
 ## Edit your custom charset:
 1) Open "CustomCharset.py" in your editor.
 2) Put each character inside one pair of single quotes.
